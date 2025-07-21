@@ -1,12 +1,18 @@
+html {
+  scroll-behavior: smooth; /* This makes the scroll behavious of internal links have a smooth animation */
+}
+
 body {
   background-color: #55595c;
   margin: 0; /* resets the default 8px from most browsers */
   text-align: center; /* centers all text elements in the website */
 }
 
+/* Game color: #a70184 */
+
 #main-header {
   background-color: white;
-  color: #a70184;
+  color: black;
   padding: 5px 0; /* top&down left&right */
   margin: 20px 30px 20px 30px; /* top right down left */
 }
@@ -21,4 +27,27 @@ body {
 
 #games-section, #used-section, #brands-section, #access-buttons {
   background-color: lightgray;
+  padding: 20px;
+  margin: 20px;
 }
+
+#access-buttons {
+  background-color: lightgray;
+}
+
+#access-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#access-buttons a {
+  text-decoration: none;
+}
+
+.card img  {
+  height: 180px;
+  width: 120px;
+}
+
+/* New CSS from here */
