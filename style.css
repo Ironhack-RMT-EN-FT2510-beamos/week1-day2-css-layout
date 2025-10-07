@@ -98,3 +98,71 @@ body {
   content: " On Sale!";
 }
 
+.games-container .card {
+  background-color: #55595c;
+  color: white;
+  width: 200px;
+  height: 380px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px 50px;
+}
+
+
+#main-header {
+  position: relative; /* because I want to position an element inside relative to this parent */
+}
+
+#main-header p + p {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0px;
+}
+
+#access-buttons {
+  position: sticky;
+  top: 0px
+}
+
+#responsive-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles only for tablets */
+@media (width > 500px) {
+  
+  body {
+    background-color: #a70184;
+  }
+
+  .games-container {
+    gap: 50px;
+  }
+
+}
+
+/* Styles only for larger screens */
+@media (width > 1200px) {
+
+  body {
+    background-color: black;
+  }
+
+  #responsive-container {
+    flex-direction: row;
+  }
+    
+}
