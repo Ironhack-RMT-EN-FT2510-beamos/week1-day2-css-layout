@@ -51,3 +51,50 @@ body {
 }
 
 /* New CSS from here */
+
+#access-buttons button {
+  background-color: #a70184;
+  color: white
+}
+
+#main-header h1 span {
+  color: #a70184;
+}
+
+#main-header p + p {
+  font-size: 30px;
+}
+
+#main-header > span {
+  font-size: 8px;
+}
+
+#access-buttons button:hover {
+  background-color: black;
+}
+
+#access-buttons button:active {
+  background-color: white;
+  color: black;
+}
+
+#brands-section ul li:hover {
+  background-color: #c57000;
+}
+
+#brands-section ul li:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+
+#brands-section ul li::marker {
+  /* color: #a70184;
+  font-size: 30px; */
+  content: "👾 ";
+  font-size: 20px;
+}
+
+#brands-section ul li:hover::after {
+  content: " On Sale!";
+}
+
